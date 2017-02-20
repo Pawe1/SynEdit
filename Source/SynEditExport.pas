@@ -684,7 +684,6 @@ end;
 
 function TSynCustomExporter.StringSize(const AText: string): Integer;
 begin
-  Result := 0;
   case Encoding of
     seUTF8:
       Result := Length(UTF8Encode(AText));

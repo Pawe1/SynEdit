@@ -2178,7 +2178,6 @@ procedure TSynBaseCompletionProposal.ExecuteEx(s: string; x, y: integer; Kind : 
     tmpX := x;
     tmpY := y;
     tmpWidth := 0;
-    tmpHeight := 0;
     case Kind of
     ctCode:
       begin
