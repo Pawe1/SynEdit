@@ -690,7 +690,9 @@ begin
     seUTF16LE, seUTF16BE:
       Result := Length(AText);
     seAnsi:
-      Result := Length(AnsiString(PWideChar(AText)));
+      Result := Length(AnsiString(AText));
+  else
+    Result := Length(AText);
   end;
   Result := Result * FCharSize;
 end;
